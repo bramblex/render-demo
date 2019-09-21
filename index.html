@@ -1,0 +1,54 @@
+<html>
+
+<body>
+    <div>
+        <textarea id="input-css" style="width: 300px; height: 300px;">
+      .container {
+        direction: horizontal;
+      }
+      .left {
+        height: 200px;
+        width: 100px;
+        color: black;
+      }
+      .right {
+        height: 200px;
+        width: 200px;
+        color: green;
+      }
+      .red-block {
+        height: 50px;
+        width: 50px;
+        color: red;
+      }
+      .grey-block {
+        height: 100px;
+        width: 100px;
+        color: grey;
+      }
+    </textarea>
+        <textarea id="input-html" style="width: 300px; height: 300px;">
+        <div class="container">
+         <div class="left"></div>
+         <div class="right">
+           <div class="red-block">
+           </div>
+           <div class="grey-block">
+           </div>
+         </div>
+        </div>
+    </textarea>
+    </div>
+    <div>
+        <button id="render">Render</button>
+    </div>
+    <div>
+        <canvas id="output-canvas" height="500" width="600" style="border: 1px solid black;"></canvas>
+    </div>
+    <script src="./htmlparser.js"></script>
+    <script src="./cssParser.js"></script>
+    <script src="./render.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
